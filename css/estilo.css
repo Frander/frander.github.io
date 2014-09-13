@@ -1,0 +1,249 @@
+@font-face {
+
+    font-family: "titulo";
+    src: url(../fonts/ti.ttf) format("truetype");
+    
+}
+
+body{
+	width: 100%;
+
+}
+
+#encabezado{
+
+	background: url(../img/04.jpg) fixed;
+	background-size: 100% 100%;
+	margin-top: -20px;
+	height: 700px;
+	position: relative;
+	width: 100%;
+}
+
+#encabezado h1{
+	padding-top: 17%;
+	color: white;
+	font-size: 6em;
+}
+
+#encabezado h3{
+	color: white;
+}
+
+#social{
+	width: 100%;
+	clear: both;
+ float:left;
+ overflow:hidden;
+}
+
+#social ul{
+	float:left;
+	left:50%;
+	list-style-type:none;
+	margin:0 auto;
+	padding:0;
+	position:relative;
+}
+
+#social li{
+	float:left;
+	position:relative;
+	right:50%;
+	padding-right: 10px;
+}
+/* ------------------------------------------------ */
+
+#servicios{
+	background: url(../img/portfolio.png) fixed;
+	background-position: 0 100px;
+	z-index: 2;
+	position: relative;
+	width: 100%;
+	height: 650px;
+}
+
+#servicios h1{
+	padding-top: 80px;
+	color: gray;
+	font-size: 4em;
+}
+
+#iconos{
+	padding-top: 150px;
+	padding-bottom: 150px;
+	visibility: hidden;
+}
+
+/* Portafolio*/
+
+#portafolio{
+	margin-top: 100px;
+	position: relative;
+	z-index: 2;
+	width: 100%;
+}
+
+#portafolio h1{
+	padding-top: 80px;
+	color: gray;
+	font-size: 4em;
+	padding-bottom: 50px;
+}
+
+#portafoliojs{
+	margin-bottom: 100px;
+}
+ 
+
+/* Contacto */
+
+#contacto{
+	width: 80%;
+	height: 600px;
+}
+
+#contacto h1{
+	padding-top: 40px;
+	color: gray;
+	font-size: 4em;
+}
+
+
+#frmcontacto{
+	width: 100%;
+	
+}
+
+/* Clases */
+.centrar{
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	text-align: center;
+}
+
+.centrar2{
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+/* #Container .mix{
+	display: none;
+} */
+
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body, button{
+  font-family: 'Helvetica Neue', arial, sans-serif;
+}
+
+.controls{
+  padding: 2%;
+  background: #333;
+  color: #eee;
+}
+
+label{
+  font-weight: 300;
+  margin: 0 .4em 0 0;
+}
+
+button{
+  display: inline-block;
+  padding: .4em .8em;
+  background: #666;
+  border: 0;
+  color: #ddd;
+  font-size: 16px;
+  font-weight: 300;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button.active{
+  background: #68b8c4;
+}
+
+button:focus{
+  outline: 0 none;
+}
+
+button + label{
+  margin-left: 1em;
+}
+
+.container{
+  padding: 2% 2% 0;
+  text-align: justify;
+  font-size: 0.1px;
+  background: #68b8c4;
+  
+  -webkit-backface-visibility: hidden;
+}
+
+.container:after{
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+
+.container .mix,
+.container .gap{
+  display: inline-block;
+  width: 49%;
+}
+
+.container .mix{
+  text-align: left;
+  background: #03899c;
+  margin-bottom: 2%;
+  display: none;
+}
+
+.container .mix.category-1{
+  border-top: 2px solid limegreen;
+}
+
+.container .mix.category-2{
+  border-top: 2px solid yellow;
+}
+
+.container .mix:after{
+  content: attr(data-myorder);
+  color: white;
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 4% 6%;
+  font-weight: 700;
+}
+
+.container .mix:before{
+  content: '';
+  display: inline-block;
+  padding-top: 60%;
+}
+
+@media all and (min-width: 420px){
+  .container .mix,
+  .container .gap{
+    width: 32%;
+  }
+}
+
+@media all and (min-width: 640px){
+  .container .mix,
+  .container .gap{
+    width: 23.5%;
+  }
+}
