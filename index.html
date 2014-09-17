@@ -16,7 +16,7 @@
 
 	<body>
 
-		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
 			<div class="navbar-header">
 				    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 				      <span class="sr-only">Toggle navigation</span>
@@ -24,25 +24,25 @@
 				      <span class="icon-bar"></span>
 				      <span class="icon-bar"></span>
 				    </button>
-		    	<a class="navbar-brand" href="index.php">Frander Mejía</a>
+		    	<a class="navbar-brand" href="#">Frander Mejía</a>
 		  		</div>
 
 		  		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		    		<ul class="nav navbar-nav">
 		            <li class="dropdown">
-					              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Inicio</a>
+					              <a href="#encabezado" class="dropdown-toggle" data-toggle="dropdown">INICIO</a>
 					            </li>
 		            
 		            <li class="dropdown">
-					              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Servicios</a>
+					              <a href="#servicios" class="dropdown-toggle" data-toggle="dropdown">SERVICIOS</a>
 					              
 					            </li>
 		            
 		            <li class="dropdown">
-					              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portafolio</a>
+					              <a href="#portafolio" class="dropdown-toggle" data-toggle="dropdown">PORTAFOLIO</a>
 					            </li>
 		      			<li class="dropdown">
-					          		<a href="#" class="dropdown-toggle" data-toggle="dropdown">Contácto</a>
+					          		<a href="#contacto" class="dropdown-toggle" data-toggle="dropdown">CONTÁCTO</a>
 					          		
 					      			</li>
 		    		</ul>
@@ -59,9 +59,11 @@
 
 			<div id="social">
 				<ul>
-					<li><img src="img/linkedin.png" width="35px" height="35px"></li>
-					<li><img src="img/twiiter.png" width="35px" height="35px"></li>
-					<li><img src="img/plus.png" width="35px" height="35px"></li>
+					<li>
+					<a href="https://www.facebook.com/frander.mejia"><img src="img/face.png" width="35px" height="35px"></a></li>
+					<li>
+					<a href="https://twitter.com/FranderMejia"><img src="img/twiiter.png" width="35px" height="35px"></a></li>
+					<li><a href="https://plus.google.com/u/0/108949702897425672781/posts"><img src="img/plus.png" width="35px" height="35px"></a></li>
 				</ul>
 			</div>
 			
@@ -73,27 +75,27 @@
 			<div id="iconos">
 
 				<div class="col-sm-3">
-					<img class="pulse" src="img/web2.png">
+					<img class="ico" src="img/web2.png">
 					<h3>Desarrollo Web</h3>
-					<p>Implementación de sitios web auto-administrables mediante CMS como Wordpress y Drupal, también puedo realizar sitios web complentamente perzonalizados desde cero.</p>
+					<strong><p>Implementación de sitios web auto-administrables mediante CMS como Wordpress y Drupal, así mismo desrrollo de sitios desde cero.</p></strong>
 				</div>
 
 				<div class="col-sm-3">
-					<img class="pulse" src="img/app.png">
+					<img class="ico" src="img/app.png">
 					<h3>Aplicaciones Móviles</h3>
-					<p>Desarrollo de aplicaciones móviles para la plataforma Android y aplicaciones móviles con HTML5 multiplataforma</p>
+					<strong><p>Desarrollo de aplicaciones móviles para la plataforma Android y HTML5 WebApps multiplataforma.</p></strong>
 				</div>
 
 				<div class="col-sm-3">
-					<img class="pulse" src="img/responsive.png">
-					<h3>Responsive Desings</h3>
-					<p>Sitios web que se adaptan a distintos dispositivos para mejorar la experiencia del usuario (UX).</p>
+					<img class="ico" src="img/responsive.png">
+					<h3>Responsive Desing</h3>
+					<strong><p>Sitios web que se adaptan a distintos dispositivos para mejorar la experiencia de usuario (UX).</p></strong>
 				</div>
 
 				<div class="col-sm-3">
-					<img class="pulse" src="img/desing.png">
+					<img class="ico" src="img/desing.png">
 					<h3>Diseño Web</h3>
-					<p>Propuestas de diseño para su sitio web con las utimas tendencias en la web y bridar una imagén fresca a los clientes de su empresa.</p>
+					<strong><p>Propuestas de diseño para su sitio web con las ultimas tendencias y así bridar una imágen fresca a los clientes de su empresa.</p></strong>
 				</div>
 
 			</div>
@@ -104,30 +106,42 @@
 			
 			<center><h1>Portafolio</h1></center>
 
-			<div id="portafoliojs">
+			<div id="portafoliojs" class="centrar">
 				
 				<div class="controls">
-				  <label>Filter:</label>
+
+				  <button class="filter" data-filter="all">TODOS</button>
+				  <button class="filter" data-filter=".category-1">SITIOS WEB</button>
+				  <button class="filter" data-filter=".category-2">APP MÓVILES</button>
+				  <button class="filter" data-filter=".category-3">APLICACIONES</button>
 				  
-				  <button class="filter" data-filter="all">All</button>
-				  <button class="filter" data-filter=".category-1">Category 1</button>
-				  <button class="filter" data-filter=".category-2">Category 2</button>
-				  
-				  <label>Sort:</label>
-				  
-				  <button class="sort" data-sort="myorder:asc">Asc</button>
-				  <button class="sort" data-sort="myorder:desc">Desc</button>
 				</div>
 				<div id="Container" class="container">
-				  <div class="mix category-1" data-myorder="1"></div>
-				  <div class="mix category-1" data-myorder="2"></div>
-				  <div class="mix category-1" data-myorder="3"></div>
-				  <div class="mix category-2" data-myorder="4"></div>
-				  <div class="mix category-1" data-myorder="5"></div>
-				  <div class="mix category-1" data-myorder="6"></div>
-				  <div class="mix category-2" data-myorder="7"></div>
-				  <div class="mix category-2" data-myorder="8"></div>
-				  
+				  <div class="mix category-1" data-myorder="1">
+				  	<img src="img/ayurveda.png" width="100%" height="100%">
+				  </div>
+				  <div class="mix category-1" data-myorder="2">
+				  	<img src="img/saint.png" width="100%" height="100%">
+				  </div>
+				  <div class="mix category-1" data-myorder="3">
+				  	<img src="img/vip.png" width="100%" height="100%">
+				  </div>
+				  <div class="mix category-2" data-myorder="4">
+				  	<img src="img/unfpa.png" width="100%" height="100%">
+				  </div>
+				  <div class="mix category-2" data-myorder="4">
+				  	<img src="img/ventas.png" width="100%" height="100%">
+				  </div>
+				  <div class="mix category-1" data-myorder="5">
+				  	<img src="img/partiez.png" width="100%" height="100%">
+				  </div>
+				  <div class="mix category-1" data-myorder="6">
+				  	<img src="img/asuncion.png" width="100%" height="100%">
+				  </div>
+				  <div class="mix category-2" data-myorder="7">
+				  	<img src="img/cellporta.png" width="100%" height="100%">
+				  </div>
+
 				  <div class="gap"></div>
 				  <div class="gap"></div>
 				</div>
@@ -145,8 +159,8 @@
 
 				<div class="col-sm-5">
 					<h3>Información de Contacto</h3>
-					<p>Teléfono: +505 81541247</p>
-					<p>Email: frander_mejia@outlook.com</p>
+					<p> <strong> <span class="glyphicon glyphicon-phone"></span> Teléfono:</strong> +505 81541247</p>
+					<p><strong> <span class="glyphicon glyphicon-envelope"></span> Email:</strong> frander_mejia@outlook.com</p>
 				</div>
 
 				<div class="col-sm-7">
@@ -192,6 +206,8 @@
 				
 			</div>
 
+			<div id="log"></div>
+
 		</section>
 	
 	</body>
@@ -201,26 +217,61 @@
 	<script type="text/javascript" src="js/bootstrap.js"></script>
 	
 	<script type="text/javascript">
+
 		$( document ).ready(function() {
 			$(function(){
 			// Instantiate MixItUp:
 				$('#Container').mixItUp();
 			});
 		});
+
 	</script>
 
 	<script>
-	$(window).scroll(function() {
-		$('#iconos').each(function(){
-		var imagePos = $(this).offset().top;
 
-		var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow+400) {
-				$(this).addClass("slideRight");
-			}
+		$(window).scroll(function() {
+			$('#iconos').each(function(){
+			var imagePos = $(this).offset().top;
+
+			var topOfWindow = $(window).scrollTop();
+				if (imagePos < topOfWindow+400) {
+					$(this).addClass("slideRight");
+				}
+			});
 		});
-	});
 
-</script>
+		/*funciones para los efectos de los iconos*/
+
+		$( ".ico" ).mouseenter(function() {
+			$(this).addClass("pulse");
+		});
+
+		$( ".ico" ).mouseleave(function() {
+
+			$(this).removeClass("pulse");
+		});
+
+	</script>
+
+	<script>
+
+		$(document).ready(function(){
+		  	$('a[href*=#]').click(function() {
+			    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+			    && location.hostname == this.hostname) {
+			      var $target = $(this.hash);
+			      $target = $target.length && $target
+			      || $('[name=' + this.hash.slice(1) +']');
+			      if ($target.length) {
+			        var targetOffset = $target.offset().top;
+			        $('html,body')
+			        .stop().animate({scrollTop: targetOffset}, 1300);
+			       return false;
+			      }
+			    }
+		  	});
+		});
+
+	</script>
 
 </html>
