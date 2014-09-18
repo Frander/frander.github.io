@@ -220,6 +220,10 @@ button + label{
   border-top: 2px solid yellow;
 }
 
+.container .mix.category-3{
+  border-top: 2px solid red;
+}
+
 .container .mix:after{
   content: attr(data-myorder);
   color: white;
@@ -248,4 +252,74 @@ button + label{
   .container .gap{
     width: 23.5%;
   }
+}
+
+@media all and (max-width: 1130px){
+	#encabezado{
+		height: 500px;
+	}
+ 
+}
+
+
+@media all and (max-width: 800px){
+	#encabezado{
+		height: 400px;
+		background-size: 100% 50%;
+	}
+ 
+}
+
+@media all and (max-width: 600px){
+	#encabezado{
+		background-size: 100% 39%;
+	}
+ 
+}
+
+@media all and (max-width: 767px){
+
+#servicios{
+
+	height: 1100px;
+
+}
+
+#iconos{
+	padding-top: 50px;
+}
+
+ 
+}
+
+@media all and (max-width: 400px){
+	#encabezado{
+		height: 350px;
+		background-size: 100% 35%;
+		/* background-position: -20px 50px; */
+	}
+
+	#servicios{
+
+	height: 1200px;
+}
+ 
+}
+
+@media all and (max-width: 260px){
+
+	#servicios{
+
+	height: 1400px;
+	}
+ 
+}
+
+@media all and (max-width: 223px){
+
+	#servicios{
+
+	height: 1500px;
+	}
+ 
 }

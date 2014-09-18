@@ -133,19 +133,19 @@
 				  	
 				  </div>
 
-				  <div class="mix category-1" data-myorder="3">
+				  <div class="mix category-3" data-myorder="3">
 					<a href="img/vip.png" rel="lightbox" title="Panel de administración de proyecto VIP Technology">
 					  	<img src="img/vip.png" width="100%" height="100%">
 					</a>
 				  </div>
 
-				  <div class="mix category-2" data-myorder="4">
+				  <div class="mix category-3" data-myorder="4">
 				  	<a href="img/unfpa.png" rel="lightbox" title="Herramientas de autoaprendizaje UNFPA (www.unfpa.com.ni)">
 				  		<img src="img/unfpa.png" width="100%" height="100%">
 				  	</a>
 				  </div>
 
-				  <div class="mix category-2" data-myorder="4">
+				  <div class="mix category-3" data-myorder="4">
 				  	<a href="img/ventas.png" rel="lightbox" title="Sistema de ventas para restaurantes">
 				  		<img src="img/ventas.png" width="100%" height="100%">
 				  	</a>			  	
@@ -171,6 +171,7 @@
 
 				  <div class="gap"></div>
 				  <div class="gap"></div>
+				  <div class="gap"></div>
 				</div>
 
 			</div>
@@ -193,13 +194,13 @@
 				<div class="col-sm-7">
 					<h3>Enviame un mensaje</h3>
 
-					<form id="frmcontacto" class="form-horizontal">
+					<form id="frmcontacto" class="form-horizontal" method="POST" action="contacto.php">
 
 						<!-- Text input-->
 						<div class="form-group">
 						  <label class="col-md-1 control-label" for="Nombre">Nombre</label> 
 						  <div class="col-md-12">
-						  <input id="Nombre" name="Nombre" placeholder="Nombre" class="form-control input-md" required="" type="text">  
+						  <input id="nombre" name="nombre" placeholder="Nombre" class="form-control input-md" required="" type="text">  
 						  </div>
 						</div>
 
@@ -207,7 +208,7 @@
 						<div class="form-group">
 						  <label class="col-md-1 control-label" for="email">Email</label>  
 						  <div class="col-md-12">
-						  <input id="email" name="email" placeholder="Email" class="form-control input-md" required="" type="text">
+						  <input id="email" name="email" placeholder="Email" class="form-control input-md" required="" type="email">
 						    
 						  </div>
 						</div>
@@ -216,7 +217,7 @@
 						<div class="form-group">
 						  <label class="col-md-1 control-label" for="mensaje">Mensaje</label>
 						  <div class="col-md-12">                     
-						    <textarea class="form-control" id="mensaje" name="mensaje"  rows="3">Mensaje</textarea>
+						    <textarea class="form-control" id="mensaje" name="mensaje"  rows="3"></textarea>
 						  </div>
 						</div>
 
@@ -270,12 +271,12 @@
 		/*funciones para los efectos de los iconos*/
 
 		$( ".ico" ).mouseenter(function() {
-			$(this).addClass("pulse");
+			$(this).addClass("floating");
 		});
 
 		$( ".ico" ).mouseleave(function() {
 
-			$(this).removeClass("pulse");
+			$(this).removeClass("floating");
 		});
 
 	</script>
