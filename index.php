@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		
+		<meta name="viewport" content="initial-scale=1">
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		
 		<link rel="icon" type="image/png" href="img/favicon.png" />
