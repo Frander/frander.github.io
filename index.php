@@ -188,7 +188,7 @@
 				<div class="col-sm-5">
 					<h3>Información de Contacto</h3>
 					<p> <strong> <span class="glyphicon glyphicon-phone"></span> Teléfono:</strong> +505 81541247</p>
-					<p><strong> <span class="glyphicon glyphicon-envelope"></span> Email:</strong> frander_mejia@outlook.com</p>
+					<p><strong> <span class="glyphicon glyphicon-envelope"></span> Email:</strong> frander.mejia15@gmail.com</p>
 				</div>
 
 				<div class="col-sm-7">

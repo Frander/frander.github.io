@@ -20,7 +20,7 @@ $mail->FromName = $nombre
 $mail->Subject  = "Contacto";
 $mail->WordWrap = 50;
  
-$mail->AddAddress("frander_mejia@outlook.com");           
+$mail->AddAddress("frander.mejia15@gmail.com");           
 $mail->IsHTML(TRUE);
 
 $mensaje = $_POST['mensaje'];
