@@ -79,7 +79,7 @@
 				<div class="col-sm-3">
 					<img class="ico" src="img/web2.png">
 					<h3>Desarrollo Web</h3>
-					<strong><p>Implementación de sitios web auto-administrables mediante CMS como Wordpress y Drupal, así mismo desrrollo de sitios desde cero.</p></strong>
+					<strong><p>Implementación de sitios web auto-administrables mediante CMS como Wordpress y Drupal, así mismo desarrollo de sitios desde cero.</p></strong>
 				</div>
 
 				<div class="col-sm-3">
