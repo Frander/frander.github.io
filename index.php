@@ -262,7 +262,7 @@
 			var imagePos = $(this).offset().top;
 
 			var topOfWindow = $(window).scrollTop();
-				if (imagePos < topOfWindow + 300) {
+				if (imagePos < topOfWindow + 200) {
 					$(this).addClass("slideRight");
 				}
 			});
