@@ -122,50 +122,50 @@
 				  
 				  <div class="mix category-1" data-myorder="1">
 				  	<a href="img/ayurveda.png" rel="lightbox" title="Sitio web del SPA Ayurveda (www.ayurvedamarmaspa.com)">
-				  		<img src="img/ayurveda.png" width="100%" height="100%">
+				  		<img src="img/ayurveda.png" class="img-thumbnail">
 				  	</a>
 				  </div>
 
 				  <div class="mix category-1" data-myorder="2">
 				  	<a href="img/saint.png" rel="lightbox" title="Sitio web de grupo Saint Germain Nicaragua (www.gruposaintgermain.org)">
-				  		<img src="img/saint.png" width="100%" height="100%">
+				  		<img src="img/saint.png" class="img-thumbnail">
 				  	</a>
 				  	
 				  </div>
 
 				  <div class="mix category-3" data-myorder="3">
 					<a href="img/vip.png" rel="lightbox" title="Panel de administración de proyecto VIP Technology">
-					  	<img src="img/vip.png" width="100%" height="100%">
+					  	<img src="img/vip.png" class="img-thumbnail">
 					</a>
 				  </div>
 
 				  <div class="mix category-3" data-myorder="4">
 				  	<a href="img/unfpa.png" rel="lightbox" title="Herramientas de autoaprendizaje UNFPA (www.unfpa.com.ni)">
-				  		<img src="img/unfpa.png" width="100%" height="100%">
+				  		<img src="img/unfpa.png" class="img-thumbnail">
 				  	</a>
 				  </div>
 
 				  <div class="mix category-3" data-myorder="4">
 				  	<a href="img/ventas.png" rel="lightbox" title="Sistema de ventas para restaurantes">
-				  		<img src="img/ventas.png" width="100%" height="100%">
+				  		<img src="img/ventas.png" class="img-thumbnail">
 				  	</a>			  	
 				  </div>
 
 				  <div class="mix category-1" data-myorder="5">
 				  	<a href="img/partiez.png" rel="lightbox" title="Sitio web de chocofloristeria en linea Partiez (www.partiez.net)">
-				  		<img src="img/partiez.png" width="100%" height="100%">
+				  		<img src="img/partiez.png" class="img-thumbnail">
 				  	</a>			  	
 				  </div>
 
 				  <div class="mix category-1" data-myorder="6">
 				  	<a href="img/asuncion.png" rel="lightbox" title="Sitio web la parroquia Asunción de Masaya (en proceso)">
-				  		<img src="img/asuncion.png" width="100%" height="100%">
+				  		<img src="img/asuncion.png" class="img-thumbnail">
 				  	</a>				  	
 				  </div>
 
 				  <div class="mix category-2" data-myorder="7">
 				  	<a href="img/cellporta.png" rel="lightbox" title="Revista de tecnologia para el proyecto VIP Technology (proximamente)">
-				  		<img src="img/cellporta.png" width="100%" height="100%">
+				  		<img src="img/cellporta.png" class="img-thumbnail">
 				  	</a>
 				  </div>
 
