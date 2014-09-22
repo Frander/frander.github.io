@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<meta name="viewport" content="initial-scale=1">
+
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		
 		<link rel="icon" type="image/png" href="img/favicon.png" />
@@ -12,13 +13,14 @@
 
 		<link rel="stylesheet" href="css/slimbox2.css" type="text/css" media="screen" />
 
-		<title>Frander Mejía</title>
+		<title>Frander Mejía | Desarrollador Web</title>
 
 	</head>
 
 	<body>
 
 		<nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+			
 			<div class="navbar-header">
 				    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 				      <span class="sr-only">Toggle navigation</span>
@@ -26,29 +28,30 @@
 				      <span class="icon-bar"></span>
 				      <span class="icon-bar"></span>
 				    </button>
-		    	<a class="navbar-brand" href="#">Frander Mejía</a>
-		  		</div>
+		    	<a class="navbar-brand" href="">Frander Mejía</a>
+		  	</div>
 
 		  		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		    		
 		    		<ul class="nav navbar-nav">
-		            <li class="dropdown">
-					              <a href="#encabezado" class="dropdown-toggle" data-toggle="dropdown">INICIO</a>
-					            </li>
+			            <li class="dropdown">
+							<a href="#encabezado" class="dropdown-toggle" data-toggle="dropdown">INICIO</a>
+						</li>
 		            
-		            <li class="dropdown">
-					              <a href="#servicios" class="dropdown-toggle" data-toggle="dropdown">SERVICIOS</a>
-					              
-					            </li>
+			            <li class="dropdown">
+							<a href="#servicios" class="dropdown-toggle" data-toggle="dropdown">SERVICIOS</a>         
+						</li>
 		            
-		            <li class="dropdown">
-					              <a href="#portafolio" class="dropdown-toggle" data-toggle="dropdown">PORTAFOLIO</a>
-					            </li>
+		            	<li class="dropdown">
+					        <a href="#portafolio" class="dropdown-toggle" data-toggle="dropdown">PORTAFOLIO</a>
+					    </li>
+
 		      			<li class="dropdown">
-					          		<a href="#contacto" class="dropdown-toggle" data-toggle="dropdown">CONTÁCTO</a>
+					        <a href="#contacto" class="dropdown-toggle" data-toggle="dropdown">CONTÁCTO</a>
 					          		
-					      			</li>
+					    </li>
 		    		</ul>
-		  	</div>
+		  		</div>
 		</nav>
 
 
@@ -76,28 +79,28 @@
 			
 			<div id="iconos">
 
-				<div class="col-sm-3">
+				<div class="col-sm-3 serv">
 					<img class="ico" src="img/web2.png">
 					<h3>Desarrollo Web</h3>
 					<strong><p>Implementación de sitios web auto-administrables mediante CMS como Wordpress y Drupal, así mismo desarrollo de sitios desde cero.</p></strong>
 				</div>
 
-				<div class="col-sm-3">
+				<div class="col-sm-3 serv">
 					<img class="ico" src="img/app.png">
 					<h3>Aplicaciones Móviles</h3>
 					<strong><p>Desarrollo de aplicaciones móviles para la plataforma Android y HTML5 WebApps multiplataforma.</p></strong>
 				</div>
 
-				<div class="col-sm-3">
+				<div class="col-sm-3 serv">
 					<img class="ico" src="img/responsive.png">
 					<h3>Responsive Desing</h3>
 					<strong><p>Sitios web que se adaptan a distintos dispositivos para mejorar la experiencia de usuario (UX).</p></strong>
 				</div>
 
-				<div class="col-sm-3">
+				<div class="col-sm-3 serv">
 					<img class="ico" src="img/desing.png">
 					<h3>Diseño Web</h3>
-					<strong><p>Propuestas de diseño para su sitio web con las ultimas tendencias y así bridar una imágen fresca a los clientes de su empresa.</p></strong>
+					<strong><p>Propuestas de diseño para su sitio web con las últimas tendencias y así bridar una imagen fresca a los clientes de su empresa.</p></strong>
 				</div>
 
 			</div>
@@ -114,7 +117,7 @@
 
 				  <button class="filter" data-filter="all">TODOS</button>
 				  <button class="filter" data-filter=".category-1">SITIOS WEB</button>
-				  <button class="filter" data-filter=".category-2">APP MÓVILES</button>
+				  <button class="filter" data-filter=".category-2">APPS MÓVILES</button>
 				  <button class="filter" data-filter=".category-3">APLICACIONES</button>
 				  
 				</div>
@@ -241,14 +244,13 @@
 	</body>
 	<script src="js/jquery.js"></script>
 	<script src="js/jquery.mixitup.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/slimbox2.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	
 	<script type="text/javascript">
-
+	/* Función para activar el plugin del portafolio */
 		$( document ).ready(function() {
 			$(function(){
-			// Instantiate MixItUp:
 				$('#Container').mixItUp();
 			});
 		});
@@ -256,8 +258,8 @@
 	</script>
 
 	<script>
-
-		$(window).scroll(function() {
+	/* Función para el efecto de aparición de los iconos de servicios*/
+		/*$(window).scroll(function() {
 			$('#iconos').each(function(){
 			var imagePos = $(this).offset().top;
 
@@ -266,23 +268,31 @@
 					$(this).addClass("slideRight");
 				}
 			});
-		});
+		});*/
 
 		/*funciones para los efectos de los iconos*/
 
-		$( ".ico" ).mouseenter(function() {
-			$(this).addClass("floating");
+		$( ".serv" ).mouseenter(function() {
+			var ser = $(this);
+			var ico = ser.find(".ico");
+			ico.addClass("floating");
+			/*$(this).addClass("floating");*/
+			/*$(this).$(".ico").addClass("floating");*/
 		});
 
-		$( ".ico" ).mouseleave(function() {
+		$( ".serv" ).mouseleave(function() {
 
-			$(this).removeClass("floating");
+			var ser = $(this);
+			var ico = ser.find(".ico");
+			ico.removeClass("floating");
+
+			/*$(this).removeClass("floating");*/
 		});
 
 	</script>
 
 	<script>
-
+	/* Función para manejar el movimiento scroll entre las secciones del sitio */
 		$(document).ready(function(){
 		  	$('a[href*=#]').click(function() {
 			    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')

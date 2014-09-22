@@ -1,8 +1,6 @@
 @font-face {
-
     font-family: "titulo";
     src: url(../fonts/ti.ttf) format("truetype");
-    
 }
 
 body{
@@ -74,7 +72,7 @@ body{
 
 #iconos{
 	padding-top: 150px;
-	visibility: hidden;
+	/* visibility: hidden; */
 }
 
 /* Portafolio*/
@@ -240,6 +238,8 @@ button + label{
   padding-top: 60%;
 }
 
+/* Media queries para manejar las responsividad del sitio web */
+
 @media all and (min-width: 420px){
   .container .mix,
   .container .gap{
@@ -296,7 +296,6 @@ button + label{
 	#encabezado{
 		height: 350px;
 		background-size: 100% 35%;
-		/* background-position: -20px 50px; */
 	}
 
 	#servicios{
