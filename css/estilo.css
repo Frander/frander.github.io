@@ -72,6 +72,7 @@ body{
 
 #iconos{
 	padding-top: 150px;
+	visibility: hidden;
 }
 
 /* Portafolio*/

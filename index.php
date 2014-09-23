@@ -259,7 +259,7 @@
 
 	<script>
 	/* Función para el efecto de aparición de los iconos de servicios*/
-		/*$(window).scroll(function() {
+		$(window).scroll(function() {
 			$('#iconos').each(function(){
 			var imagePos = $(this).offset().top;
 
@@ -268,7 +268,7 @@
 					$(this).addClass("slideRight");
 				}
 			});
-		});*/
+		});
 
 		/*funciones para los efectos de los iconos*/
 
