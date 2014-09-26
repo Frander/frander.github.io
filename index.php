@@ -47,7 +47,7 @@
 					    </li>
 
 		      			<li class="dropdown">
-					        <a href="#contacto" class="dropdown-toggle" data-toggle="dropdown">CONTÁCTO</a>
+					        <a href="#contacto" class="dropdown-toggle" data-toggle="dropdown">CONTACTO</a>
 					          		
 					    </li>
 		    		</ul>
@@ -121,11 +121,12 @@
 				  <button class="filter" data-filter=".category-3">APLICACIONES</button>
 				  
 				</div>
+
 				<div id="Container" class="container">
 				  
 				  <div class="mix category-1" data-myorder="1">
 				  	<a href="img/ayurveda.png" rel="lightbox" title="Sitio web del SPA Ayurveda (www.ayurvedamarmaspa.com)">
-				  		<img src="img/ayurveda.png" class="img-thumbnail">
+				  		<img src="img/ayurveda.png" class="img-thumbnail" onmouseout="this.style.opacity=1;this.filters.alpha.opacity='100';" onmouseover="this.style.opacity=0.2;this.filters.alpha.opacity='20';">
 				  	</a>
 				  </div>
 
