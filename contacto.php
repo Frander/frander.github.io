@@ -1,71 +1,61 @@
 <?php
 require 'libs/PHPMailerAutoload.php';
-/*
+//Create a new PHPMailer instance
 $mail = new PHPMailer();
-$mail->isSendmail();
 
-$email = $_POST['email'];
-$nombre = $_POST['nombre'];
+//Tell PHPMailer to use SMTP
+$mail->isSMTP();
 
-$mail->setFrom($email, $nombre);
-
-$mail->addAddress('frander.mejia15@gmail.com', 'Frander Mejía');
-
-$mail->Subject = 'Contacto Portafolio';
-
-$mensaje = $_POST['mensaje'];
-
-$mail->AltBody = $mensaje;
-
-$mail->send()*/
-$mail = new PHPMailer();
- 
-$mail->IsSMTP();
-
+//Enable SMTP debugging
+// 0 = off (for production use)
+// 1 = client messages
+// 2 = client and server messages
 $mail->SMTPDebug = 2;
 
-$mail->Host     = "ssl://smtp.gmail.com";
+//Ask for HTML-friendly debug output
+$mail->Debugoutput = 'html';
 
-/*$mail->Port     = 465;*/
+//Set the hostname of the mail server
+$mail->Host = 'smtp.gmail.com';
 
+//Set the SMTP port number - 587 for authenticated TLS, a.k.a. RFC4409 SMTP submission
 $mail->Port = 587;
 
+//Set the encryption system to use - ssl (deprecated) or tls
 $mail->SMTPSecure = 'tls';
 
+//Whether to use SMTP authentication
 $mail->SMTPAuth = true;
- 
+
+//Username to use for SMTP authentication - use full email address for gmail
 $mail->Username = "frander.mejia15@gmail.com";
 
+//Password to use for SMTP authentication
 $mail->Password = "Guaymitas12";
 
-$email = $_POST['email'];
+//Set who the message is to be sent from
+
+$correo = $_POST['email'];
 $nombre = $_POST['nombre'];
 
-$mail->setFrom($email, $nombre);
+$mail->setFrom($correo, $nombre);
 
-$mail->AddAddress("frander.mejia15@gmail.com"); 
- 
-/*$mail->From     = $email;
-$mail->FromName = $nombre;*/
- 
-$mail->Subject  = "Contacto";
+//Set who the message is to be sent to
+$mail->addAddress('frander.mejia15@gmail.com', 'Frander Mejía');
 
-/*$mail->WordWrap = 50;
-   
-$mail->IsHTML(TRUE);*/
+//Set the subject line
+$mail->Subject = 'Contacto via Portafolio';
 
-$mensaje = $_POST['mensaje'];
+$mensaje = "Mensaje: " . $_POST['mensaje'] . " Correo: " . $correo = $_POST['email'] . " Nombre: " . $nombre;
 
-/*$mail->AltBody = $mensaje;;*/
- 
-$mail->Body = $mensaje;
+$mail->Body    = $mensaje;
 
-
- 
-if(!$mail->Send()) {
-    echo "Error: " . $mail->ErrorInfo;
+//send the message, check for errors
+if (!$mail->send()) {
+    //echo "Mailer Error: " . $mail->ErrorInfo;
+    echo ":D";
 } else {
-    echo "Mensaje enviado";
+    echo "Message sent!";
 }
 ?>
 
