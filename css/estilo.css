@@ -254,62 +254,179 @@ button + label{
   }
 }
 
-@media all and (max-width: 1130px){
+/* @media all and (max-width: 1130px){
 	#encabezado{
-		height: 500px;
+		background: url(../img/04-med.jpg) fixed;
+		background-size: 100% auto;
+	}
+ 
+} */
+
+@media all and (max-width: 1120px){
+	#encabezado{
+		 height: 600px; 
 	}
  
 }
+
+@media all and (max-width: 960px){
+	#encabezado{
+		 height: 500px; 
+	}
+ 
+}
+
 
 
 @media all and (max-width: 800px){
 	#encabezado{
-		height: 400px;
-		background-size: 100% 50%;
+		height: 450px;
+		/* background: url(../img/04-sm.jpg) fixed;
+		background-size: 100% auto; */
 	}
  
 }
 
-@media all and (max-width: 600px){
+@media all and (max-width: 720px){
 	#encabezado{
-		background-size: 100% 39%;
+		height: 400px;
 	}
  
 }
+
+@media all and (max-width: 640px){
+	#encabezado{
+		height: 350px;
+	}
+ 
+}
+
+@media all and (max-width: 560px){
+	#encabezado{
+		height: 300px;
+	}
+ 
+}
+
+@media all and (max-width: 523px){
+
+	#encabezado{
+		height: 321px;
+	}
+
+
+	#encabezado h1{
+		padding-top: 8%;
+	}
+ 
+}
+
+@media all and (max-width: 510px){
+
+	#encabezado{
+		height: 280px;
+	}
+
+
+	#encabezado h1{
+		padding-top: 18%;
+		font-size: 4em;
+	}
+ 
+}
+
+@media all and (max-width: 445px){
+
+	#encabezado{
+		height: 240px;
+	}
+
+ 
+}
+
+
+
+
 
 @media all and (max-width: 767px){
 
-#servicios{
+	#servicios{
 
-	height: 1100px;
+		height: 1100px;
 
-}
+	}
 
-#iconos{
-	padding-top: 50px;
-}
+	#iconos{
+		padding-top: 50px;
+	}
 
  
 }
 
 @media all and (max-width: 400px){
-	#encabezado{
-		height: 350px;
-		background-size: 100% 35%;
-	}
 
 	#servicios{
-
-	height: 1200px;
-}
+		height: 1200px;
+	}
  
 }
 
+@media all and (max-width: 383px){
+
+	#encabezado{
+		height: 190px;
+	}
+
+	#encabezado h1{
+		padding-top: 15%;
+		font-size: 3em;
+	}
+
+	#encabezado h3{
+		margin-top: -10px;
+		font-size: 1.5em;
+	}
+
+ 
+}
+
+@media all and (max-width: 308px){
+
+	#encabezado{
+		height: 165px;
+	}
+
+	#encabezado h1{
+		padding-top: 18%;
+		font-size: 2.5em;
+	}
+
+ 
+}
+
+
 @media all and (max-width: 260px){
 
-	#servicios{
+	#encabezado{
+		height: 140px;
+	}
 
-	height: 1400px;
+	#encabezado h1{
+		padding-top: 24%;
+		font-size: 2em;
+	}
+
+	#encabezado h3{
+		font-size: 1em;
+	}
+
+	#social ul li a img{
+		width: 20px;
+		height: 20px;
+	}
+
+	#servicios{
+		height: 1400px;
 	}
  
 }
