@@ -9,8 +9,9 @@ body{
 
 #encabezado{
 
-	background: url(../img/04.jpg) fixed;
+	background: url(../img/portada.png) fixed;
 	background-size: 100% auto;
+	background-position: -100px 0px 0px 0px;
 	margin-top: -20px;
 	height: 700px;
 	position: relative;
@@ -18,13 +19,14 @@ body{
 }
 
 #encabezado h1{
-	padding-top: 17%;
+	padding-top: 6%;
 	color: white;
-	font-size: 6em;
+	font-size: 4em;
 }
 
 #encabezado h3{
 	color: white;
+	margin-top: -10px;
 }
 
 #social{
@@ -32,6 +34,7 @@ body{
 	clear: both;
     float:left;
     overflow:hidden;
+    margin-top: 1%;
 }
 
 #social ul{
